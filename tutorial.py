@@ -1,8 +1,4 @@
-from ggame import App
-myapp = App()
-myapp.run()
-
-from ggame import App, Color, Linestyle, Sprite
+from ggame import App, Color, LineStyle, Sprite
 from ggame import RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 
 # Three primary colors with no transparency (alpha = 1.0)
@@ -15,3 +11,9 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 # A graphics asset that represents a rectangle
 rectangle = RectangleAsset(50, 20, thinline, blue)
+
+# Now display a rectangle
+Sprite(rectangle)
+
+myapp = App()
+myapp.run()
