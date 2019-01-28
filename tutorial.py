@@ -11,9 +11,11 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 # A graphics asset that represents a rectangle
 rectangle = RectangleAsset(50, 20, thinline, blue)
+square = RectangleAsset(100, 100, thinline, red)
 
 # Now display a rectangle
-Sprite(rectangle)
+Sprite(rectangle, (200, 60))
+Sprite(square, (210, 50))
 
 myapp = App()
 myapp.run()
